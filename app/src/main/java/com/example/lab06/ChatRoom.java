@@ -139,7 +139,7 @@ public class ChatRoom extends AppCompatActivity {
             super(itemView);
 
             itemView.setOnClickListener(clk ->{
-                int position = getAbsoluteAdapterPosition();
+                int position = getAdapterPosition();
                 AlertDialog.Builder builder = new AlertDialog.Builder( ChatRoom.this );
                 builder.setMessage("Do you want to delete the message: "+ messageText.getText())
                         .setTitle("Question")
